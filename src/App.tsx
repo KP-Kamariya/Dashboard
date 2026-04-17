@@ -1,13 +1,12 @@
-import './App.css'
+// import { useState } from "react";
 
-function App() {
- 
+const App = () => {
 
   return (
     <>
-      
+
     </>
-  )
-}
+  );
+};
 
 export default App
