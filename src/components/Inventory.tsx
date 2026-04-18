@@ -2,14 +2,15 @@ import {Field,} from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 
 import { FileText, FolderX, Funnel} from 'lucide-react';
-import Datatable from './Datatable'
 import Footer from '@/commonfiles/Footer'
 import { Link } from 'react-router-dom'
+import Datatable from "./Datatable";
 
-const Inventory = ({isOpen }: { onToggle: () => void, isOpen: boolean }) => {
+const Inventory = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean }) => {
+
   return (
     <>
-<div  className={`container bg-white border-b border-gray-300 z-10 transition-all w-full duration-300 ease-in-out ${isOpen ?'absolute left-10 top-0 w-300':'absolutev left-70 top-0 w-[75vw] ms-auto me-auto'}`}>      
+<div  className={`container bg-whit e border-b border-gray-300 z-10 transition-all w-full duration-300 ease-in-out ${isOpen ?'absolute left-10 top-0 w-300':'absolutev left-70 top-0 w-[75vw] ms-auto me-auto'}`}>      
         <div className='px-4 py-3'>
           <div className="flex"  >
             <div className='w-full mb-5'>
@@ -35,7 +36,7 @@ const Inventory = ({isOpen }: { onToggle: () => void, isOpen: boolean }) => {
             </div>
           </div>
           <div className='border border-gray-300 mt-5 rounded-xl p-4'>
-          <Datatable />
+            <Datatable/>
           </div>
         </div>
         <Footer />

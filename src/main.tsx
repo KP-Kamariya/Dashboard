@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import Dashboard from './components/Dashboard'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Inventory from './components/Inventory';
 import All_Products from './components/All_Products';
@@ -23,10 +22,7 @@ let allrouter = createBrowserRouter([
         index: true,
         element: <Dashboard />
       },
-      {
-        path: 'dashboard',
-        element: <Dashboard />
-      },
+   
       {
         path: 'inventory',
         element: <Inventory />
@@ -41,7 +37,7 @@ let allrouter = createBrowserRouter([
       },
       {
         path: 'docs',
-        element: <Docs />
+        element: <Docs/>
       },
     ]
   },

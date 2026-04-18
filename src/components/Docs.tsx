@@ -1,5 +1,5 @@
 import Footer from '@/commonfiles/Footer'
-const Docs = ({isOpen }: { onToggle: () => void, isOpen: boolean }) => {
+const Docs = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean }) => {
   return (
     <>
 <div  className={`container bg-white border-b border-gray-300 z-10 transition-all w-full duration-300 ease-in-out ${isOpen ?'absolute left-10 top-0 w-300':'absolutev left-70 top-0 w-[75vw] ms-auto me-auto'}`}>        <div className='px-4 py-3'>

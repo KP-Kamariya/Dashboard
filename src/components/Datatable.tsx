@@ -1,5 +1,5 @@
-import { Dot, Table } from 'lucide-react';
-import { TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
+import { Dot,  } from 'lucide-react';
+import {Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
 
 const invoices = [
@@ -44,6 +44,7 @@ const invoices = [
 const Datatable = () => {
     return (
         <>
+        <div>
             <Table>
                 <TableHeader>
                     <TableRow>
@@ -64,6 +65,7 @@ const Datatable = () => {
                 </TableBody>
 
             </Table>
+            </div>
         </>
     )
 }

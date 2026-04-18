@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-const All_Products = ({isOpen }: { setProducts: React.Dispatch<React.SetStateAction<any[]>>, isOpen: boolean }) => {
+const All_Products = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean }) => {
 
   return (
     <>

@@ -8,7 +8,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
 import Datatable from './Datatable';
 import Footer from '@/commonfiles/Footer';
 
-const Dashboard = ({isOpen }: { onToggle: () => void, isOpen: boolean }) => {
+const Dashboard = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean }) => {
 
   return (
     <>
