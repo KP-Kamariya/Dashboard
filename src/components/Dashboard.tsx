@@ -1,10 +1,9 @@
-// import React from 'react'
-import { PanelLeftOpen, BellDot, ClipboardList, Repeat2, DollarSign, NotepadText, Copy, CreditCard, Banknote, Pi, ChevronDown, Calendar1 } from 'lucide-react';
+import { ClipboardList, Repeat2, DollarSign, NotepadText, Copy, CreditCard, Banknote,ChevronDown, Calendar1 } from 'lucide-react';
 
 import Piechart1 from './Piechart1';
 import Piechart2 from './Piechart2';
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,} from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuTrigger,} from "@/components/ui/dropdown-menu"
 import Datatable from './Datatable';
 import Footer from '@/commonfiles/Footer';
 
@@ -97,7 +96,7 @@ const Dashboard = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean 
                   <p className='text-[14px] pt-1'>Total Profit</p>
                 </div>
                 <div className='flex justify-end w-full'>
-                  <Copy className='text-black' />
+                  <CreditCard className='text-black' />
                 </div>
               </div>
               <hr className='text-gray-500' />
@@ -117,7 +116,7 @@ const Dashboard = ({isOpen = false }: { onToggle?: () => void, isOpen?: boolean 
                   <p className='text-[14px] pt-1'>Total Profit</p>
                 </div>
                 <div className='flex justify-end w-full'>
-                  <Copy className='text-danger' />
+                  <Banknote className='text-danger' />
                 </div>
               </div>
               <hr className='text-gray-500' />
